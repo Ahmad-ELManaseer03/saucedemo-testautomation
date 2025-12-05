@@ -275,7 +275,7 @@ The framework currently automates the following manual test cases:
 **Role:** QA / Test Automation Engineer (Java + Selenium + TestNG)
 
 This project is part of a professional QA automation portfolio and demonstrates the ability to design, implement, and maintain UI test automation frameworks following industry best practices.
-
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="ahmad-elmanaseer03" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://jo.linkedin.com/in/ahmad-elmanaseer03?trk=profile-badge">Ahmad Manaseer</a></div>
               
 
