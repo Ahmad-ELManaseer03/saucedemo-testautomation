@@ -152,7 +152,7 @@ Each automated test maps directly to a documented manual test case (see [Manual 
 
 ## 🗂 Project Structure
 
-
+```text
 saucedemo-automation/
  ├─ pom.xml                  # Maven configuration (dependencies, plugins)
  ├─ testng.xml               # TestNG suite configuration
@@ -175,7 +175,7 @@ saucedemo-automation/
  │             ├─ AddToCartTest.java        # TC-001
  │             ├─ CartItemNameTest.java     # TC-002
  │             └─ InvalidLoginTest.java     # TC-003
-
+```
 
 ---
 
@@ -277,4 +277,5 @@ The framework currently automates the following manual test cases:
 This project is part of a professional QA automation portfolio and demonstrates the ability to design, implement, and maintain UI test automation frameworks following industry best practices.
 
 ```
+
 
