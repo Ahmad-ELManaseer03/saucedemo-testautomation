@@ -1,49 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٥ غرينتش+٠٣:٠٠" name="Saucedemo Test Suite" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢١ غرينتش+٠٣:٠٠" duration-ms="6512">
+  <suite started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٠ EET" name="Saucedemo Test Suite" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٣:٠٠ EET" duration-ms="30092">
     <groups>
     </groups>
-    <test started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٥ غرينتش+٠٣:٠٠" name="UI Tests" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢١ غرينتش+٠٣:٠٠" duration-ms="6512">
+    <test started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٠ EET" name="UI Tests" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٣:٠٠ EET" duration-ms="30092">
       <class name="com.ahmad.saucedemo.tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@7e07db1f]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٥ غرينتش+٠٣:٠٠" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٦ غرينتش+٠٣:٠٠" duration-ms="1432" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@217ed35e]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٠ EET" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣١ EET" duration-ms="1314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartShouldShowOneItemInCartBadge()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@7e07db1f]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٦ غرينتش+٠٣:٠٠" name="addToCartShouldShowOneItemInCartBadge" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٧ غرينتش+٠٣:٠٠" duration-ms="1108" status="PASS">
+        <test-method signature="addToCartShouldShowOneItemInCartBadge()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@217ed35e]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣١ EET" name="addToCartShouldShowOneItemInCartBadge" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٢ EET" duration-ms="1250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartShouldShowOneItemInCartBadge -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@7e07db1f]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٧ غرينتش+٠٣:٠٠" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٨ غرينتش+٠٣:٠٠" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.AddToCartTest@217ed35e]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٢ EET" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٢ EET" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ahmad.saucedemo.tests.AddToCartTest -->
-      <class name="com.ahmad.saucedemo.tests.InvalidLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@1d2adfbe]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢٠ غرينتش+٠٣:٠٠" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢٠ غرينتش+٠٣:٠٠" duration-ms="653" status="PASS">
+      <class name="com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest@f5958c9]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٦ EET" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٧ EET" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginShouldShowErrorMessage()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@1d2adfbe]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢٠ غرينتش+٠٣:٠٠" name="invalidLoginShouldShowErrorMessage" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢١ غرينتش+٠٣:٠٠" duration-ms="951" status="PASS">
+        <test-method signature="checkoutWithEmptyCart_usesCustomerFromDatabase()[pri:0, instance:com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest@f5958c9]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٧ EET" name="checkoutWithEmptyCart_usesCustomerFromDatabase" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٥٩ EET" duration-ms="21855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithEmptyCart_usesCustomerFromDatabase -->
+        <test-method signature="checkoutWithProduct_usesCustomerFromDatabase()[pri:0, instance:com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest@f5958c9]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٥٩ EET" name="checkoutWithProduct_usesCustomerFromDatabase" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٥٩ EET" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithProduct_usesCustomerFromDatabase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest@f5958c9]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٥٩ EET" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٣:٠٠ EET" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest -->
+      <class name="com.ahmad.saucedemo.tests.InvalidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@477b4cdf]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٤ EET" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٥ EET" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginShouldShowErrorMessage()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@477b4cdf]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٥ EET" name="invalidLoginShouldShowErrorMessage" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٦ EET" duration-ms="951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginShouldShowErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@1d2adfbe]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢١ غرينتش+٠٣:٠٠" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢١ غرينتش+٠٣:٠٠" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.InvalidLoginTest@477b4cdf]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٦ EET" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٦ EET" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ahmad.saucedemo.tests.InvalidLoginTest -->
       <class name="com.ahmad.saucedemo.tests.CartItemNameTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@49ec71f8]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٨ غرينتش+٠٣:٠٠" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٨ غرينتش+٠٣:٠٠" duration-ms="676" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@3eb25e1a]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٢ EET" name="setUp" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٣ EET" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addedItemShouldAppearInCartWithSameName()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@49ec71f8]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٨ غرينتش+٠٣:٠٠" name="addedItemShouldAppearInCartWithSameName" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٩ غرينتش+٠٣:٠٠" duration-ms="1113" status="PASS">
+        <test-method signature="addedItemShouldAppearInCartWithSameName()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@3eb25e1a]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٣ EET" name="addedItemShouldAppearInCartWithSameName" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٤ EET" duration-ms="1138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addedItemShouldAppearInCartWithSameName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@49ec71f8]" started-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:١٩ غرينتش+٠٣:٠٠" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T٠٣:١٢:٢٠ غرينتش+٠٣:٠٠" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ahmad.saucedemo.tests.CartItemNameTest@3eb25e1a]" started-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٤ EET" name="tearDown" finished-at="٢٠٢٥-١٢-٠٥T١٠:٠٢:٣٤ EET" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

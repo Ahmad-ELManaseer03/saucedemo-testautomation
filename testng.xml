@@ -6,6 +6,8 @@
             <class name="com.ahmad.saucedemo.tests.AddToCartTest"/>
             <class name="com.ahmad.saucedemo.tests.CartItemNameTest"/>
             <class name="com.ahmad.saucedemo.tests.InvalidLoginTest"/>
+            <class name="com.ahmad.saucedemo.tests.CheckoutFromDatabaseTest"/>
+
         </classes>
     </test>
 

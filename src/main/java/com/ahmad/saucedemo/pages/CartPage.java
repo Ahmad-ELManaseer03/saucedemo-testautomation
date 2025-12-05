@@ -5,17 +5,25 @@ import org.openqa.selenium.WebDriver;
 
 public class CartPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    // اسم المنتجات في صفحة الكارت
-    private By cartItemName = By.className("inventory_item_name");
+    private final By firstItemName = By.cssSelector(".cart_item .inventory_item_name");
+    private final By cartItems = By.cssSelector(".cart_item");
+    private final By checkoutButton = By.cssSelector("[data-test='checkout']");
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // إرجاع اسم أول منتج موجود بالسلة
     public String getFirstItemName() {
-        return driver.findElement(cartItemName).getText();
+        return driver.findElement(firstItemName).getText();
+    }
+
+    public int getCartItemCount() {
+        return driver.findElements(cartItems).size();
+    }
+
+    public void clickCheckout() {
+        driver.findElement(checkoutButton).click();
     }
 }
