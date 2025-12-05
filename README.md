@@ -1,13 +1,13 @@
-
+````markdown
 <div align="center">
 
 # 🧪 Saucedemo UI Test Automation Framework
 
-A maintainable and extensible **UI test automation framework** for the [Saucedemo](https://www.saucedemo.com/) demo e-commerce website.
+A maintainable and extensible **UI test automation framework** for the [Saucedemo](https://www.saucedemo.com/) demo e-commerce application.
 
 Built with:
 
-![Java](https://img.shields.io/badge/Java-11%2B-orange?logo=coffeescript&logoColor=white)
+![Java](https://img.shields.io/badge/Java-11%2B-orange?logo=openjdk&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-WebDriver-43B02A?logo=selenium&logoColor=white)
 ![TestNG](https://img.shields.io/badge/TestNG-Testing-blueviolet)
 ![Maven](https://img.shields.io/badge/Maven-Build-yellow?logo=apache-maven)
@@ -37,15 +37,15 @@ Built with:
 
 ## 🎯 Objectives
 
-- Validate core user flows on Saucedemo:
+- Automate and validate core user flows on Saucedemo:
   - Successful login and cart interaction.
-  - Correct product information between pages.
+  - Consistent product information between inventory and cart pages.
   - Proper error handling for invalid login attempts.
-- Demonstrate professional automation engineering practices:
-  - Page Object Model (POM).
-  - Base test class for WebDriver lifecycle management.
-  - Centralized configuration.
-  - TestNG suite-based execution.
+- Demonstrate professional test automation practices:
+  - Clean **Page Object Model (POM)** implementation.
+  - Shared **BaseTest** for WebDriver lifecycle management.
+  - Centralized configuration and test data.
+  - Suite-based execution using **TestNG**.
 
 ---
 
@@ -57,7 +57,9 @@ Built with:
 - **UI Automation:** Selenium WebDriver  
 - **Driver Management:** WebDriverManager  
 - **Design Pattern:** Page Object Model (POM)  
-- **Browser:** Microsoft Edge (configurable to Chrome/Firefox)  
+- **Default Browser:** Microsoft Edge (can be adjusted to Chrome / Firefox)  
+
+All external dependencies are declared and managed in `pom.xml`.
 
 ---
 
@@ -69,9 +71,9 @@ All UI interactions are encapsulated in dedicated **Page Object** classes under 
 
 #### `LoginPage`
 
-- Opens the login page.  
+- Opens the Saucedemo login page.  
 - Performs login with supplied credentials.  
-- Reads and exposes error messages for invalid login scenarios.
+- Exposes error messages for invalid login scenarios.
 
 #### `InventoryPage`
 
@@ -85,10 +87,10 @@ All UI interactions are encapsulated in dedicated **Page Object** classes under 
 - Represents the shopping cart page.  
 - Reads product information (e.g. product name) from the cart.
 
-Tests never access raw locators directly. They consume high-level methods from the Page Objects, which improves:
+The tests never interact with raw locators directly. They use high-level methods from the Page Objects, which improves:
 
-- **Readability**
-- **Reusability**
+- **Readability**  
+- **Reusability**  
 - **Maintainability**
 
 ---
@@ -100,12 +102,12 @@ Tests never access raw locators directly. They consume high-level methods from t
 - Initializes WebDriver using **WebDriverManager**.  
 - Maximizes the browser window.  
 - Configures implicit waits.  
-- Ensures browser cleanup in `@AfterClass`.
+- Closes the browser and cleans up in `@AfterClass`.
 
 All test classes **extend `BaseTest`**, which:
 
-- Avoids duplicated setup/teardown code.  
-- Provides a consistent WebDriver lifecycle across all tests.
+- Eliminates duplicated setup/teardown logic.  
+- Provides a consistent WebDriver lifecycle across all tests.  
 
 ---
 
@@ -114,12 +116,12 @@ All test classes **extend `BaseTest`**, which:
 Environment-related constants are stored in `com.ahmad.saucedemo.config.AppConfig`:
 
 ```java
-public static final String BASE_URL = "https://www.saucedemo.com/";
-public static final String STANDARD_USER = "standard_user";
+public static final String BASE_URL          = "https://www.saucedemo.com/";
+public static final String STANDARD_USER     = "standard_user";
 public static final String STANDARD_PASSWORD = "secret_sauce";
 ````
 
-This allows URLs and credentials to be updated centrally without modifying test logic.
+This allows test data (URLs, credentials, etc.) to be updated in a single place without modifying individual tests or page objects.
 
 ---
 
@@ -129,13 +131,13 @@ Current automated scenarios:
 
 1. **AddToCartTest**
 
-   * Logs in with a valid user.
+   * Logs in with a valid standard user.
    * Adds the first product from the inventory to the cart.
    * Verifies that the cart badge displays `1`.
 
 2. **CartItemNameTest**
 
-   * Logs in with a valid user.
+   * Logs in with a valid standard user.
    * Adds the first product from the inventory to the cart.
    * Navigates to the cart page.
    * Verifies that the product name in the cart matches the selected product.
@@ -144,7 +146,7 @@ Current automated scenarios:
 
    * Opens the login page.
    * Uses a valid username with an invalid password.
-   * Verifies that an error message is displayed and the user stays on the login page.
+   * Verifies that an error message is displayed and the user remains on the login page.
 
 Each automated test maps directly to a documented manual test case (see [Manual Test Cases Mapping](#-manual-test-cases-mapping)).
 
@@ -154,8 +156,8 @@ Each automated test maps directly to a documented manual test case (see [Manual 
 
 ```text
 saucedemo-automation/
- ├─ pom.xml                  # Maven configuration (dependencies, plugins)
- ├─ testng.xml               # TestNG suite configuration
+ ├─ pom.xml                       # Maven configuration (dependencies, plugins)
+ ├─ testng.xml                    # TestNG suite configuration
  ├─ src
  │  ├─ main
  │  │  └─ java
@@ -182,11 +184,9 @@ saucedemo-automation/
 ## 📦 Prerequisites
 
 * **JDK:** 11 or 17 installed and configured in `JAVA_HOME`.
-* **Maven:** Installed and available on system `PATH` (for CLI usage).
-* **IDE:** Eclipse / IntelliJ IDEA / VS Code with Java support.
+* **Maven:** Installed and available on system `PATH`.
+* **IDE:** Eclipse, IntelliJ IDEA, or VS Code with Java support.
 * **Browser:** Microsoft Edge installed (default WebDriver browser).
-
-All third-party dependencies are managed via **Maven** in `pom.xml`.
 
 ---
 
@@ -194,23 +194,22 @@ All third-party dependencies are managed via **Maven** in `pom.xml`.
 
 ### 7.1 Importing the Project
 
-1. Clone or download the repository.
-2. Open it in the IDE as a Maven project:
+1. Clone or download this repository.
+2. Open it in your preferred IDE as a Maven project:
 
    * **Eclipse:** `File → Import → Existing Maven Projects`
    * **IntelliJ IDEA:** `Open → Select pom.xml`
-
-Wait until Maven completes dependency resolution.
+3. Allow Maven to download and resolve all dependencies.
 
 ---
 
-### 7.2 Running Tests from IDE
+### 7.2 Running Tests from the IDE
 
-* To run a **single test class** (e.g. `AddToCartTest`):
+* **Run a single test class** (e.g. `AddToCartTest`):
 
   * Right-click the class → `Run As → TestNG Test`.
 
-* To run the **entire suite**:
+* **Run the entire suite**:
 
   * Right-click `testng.xml` → `Run As → TestNG Suite`.
 
@@ -224,6 +223,8 @@ From the project root:
 mvn test
 ```
 
+Maven will compile the project and execute the TestNG suite defined in `testng.xml`.
+
 ---
 
 ## 🔄 Extending the Framework
@@ -231,9 +232,9 @@ mvn test
 To add a new UI test scenario:
 
 1. Create or extend a **Page Object** under `com.ahmad.saucedemo.pages`.
-2. Add high-level methods for the required interactions (e.g. sorting, removing items, checkout).
+2. Add high-level methods for the required interactions (sorting, removing items, checkout, etc.).
 3. Create a new test class under `com.ahmad.saucedemo.tests` extending `BaseTest`.
-4. Optionally, register the test class in `testng.xml` to include it in the suite.
+4. Optionally register the new test class in `testng.xml` to include it in the suite.
 
 Example skeleton for a new test:
 
@@ -249,23 +250,19 @@ public class CheckoutTest extends BaseTest {
 }
 ```
 
+This structure keeps test logic readable and consistent across the framework.
+
 ---
 
 ## 🧾 Manual Test Cases Mapping
 
 The framework currently automates the following manual test cases:
 
-* **TC-001 – Add first product to cart – badge shows 1**
-
-  * Automated in `AddToCartTest`.
-
-* **TC-002 – Added product name in cart matches selected product**
-
-  * Automated in `CartItemNameTest`.
-
-* **TC-003 – Invalid login shows an error message**
-
-  * Automated in `InvalidLoginTest`.
+| Test Case ID | Description                                           | Automated Class    |
+| ------------ | ----------------------------------------------------- | ------------------ |
+| **TC-001**   | Add first product to cart – cart badge shows `1`      | `AddToCartTest`    |
+| **TC-002**   | Product name in cart matches the selected product     | `CartItemNameTest` |
+| **TC-003**   | Invalid login displays an error message on login page | `InvalidLoginTest` |
 
 ---
 
@@ -274,9 +271,10 @@ The framework currently automates the following manual test cases:
 **Name:** Ahmad Ghazi El-Manaseer
 **Role:** QA / Test Automation Engineer (Java + Selenium + TestNG)
 
+* 🔗 LinkedIn: [linkedin.com/in/ahmad-elmanaseer03](https://www.linkedin.com/in/ahmad-elmanaseer03)
+* 💻 GitHub: [github.com/Ahmad-ELManaseer03](https://github.com/Ahmad-ELManaseer03)
+
 This project is part of a professional QA automation portfolio and demonstrates the ability to design, implement, and maintain UI test automation frameworks following industry best practices.
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="ahmad-elmanaseer03" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://jo.linkedin.com/in/ahmad-elmanaseer03?trk=profile-badge">Ahmad Manaseer</a></div>
-              
 
-
+```
+```
