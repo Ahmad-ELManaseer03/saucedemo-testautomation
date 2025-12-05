@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Saucedemo Test Suite">
+
+    <test name="UI Tests">
+        <classes>
+            <class name="com.ahmad.saucedemo.tests.AddToCartTest"/>
+            <class name="com.ahmad.saucedemo.tests.CartItemNameTest"/>
+            <class name="com.ahmad.saucedemo.tests.InvalidLoginTest"/>
+        </classes>
+    </test>
+
+</suite>
