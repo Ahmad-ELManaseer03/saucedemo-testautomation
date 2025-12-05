@@ -263,14 +263,8 @@ The framework currently automates the following manual test cases:
 
 
 ## 👤 Author
-
-**Name:** Ahmad Ghazi El-Manaseer
-**Role:** QA / Test Automation Engineer (Java + Selenium + TestNG)
-
-* 🔗 LinkedIn: [linkedin.com/in/ahmad-elmanaseer03](https://www.linkedin.com/in/ahmad-elmanaseer03)
-* 💻 GitHub: [github.com/Ahmad-ELManaseer03](https://github.com/Ahmad-ELManaseer03)
+<div align="center"> <table> <tr> <td align="center"> <strong>Ahmad Ghazi El-Manaseer</strong><br/> QA / Test Automation Engineer (Java + Selenium + TestNG)<br/><br/> <a href="https://www.linkedin.com/in/ahmad-elmanaseer03"> <img src="https://img.shields.io/badge/LinkedIn-View%20Profile-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn Profile"/> </a> <a href="https://github.com/Ahmad-ELManaseer03"> <img src="https://img.shields.io/badge/GitHub-Ahmad--ELManaseer03-181717?logo=github&logoColor=white" alt="GitHub Profile"/> </a> </td> </tr> </table> </div>
 
 This project is part of a professional QA automation portfolio and demonstrates the ability to design, implement, and maintain UI test automation frameworks following industry best practices.
 
-```
-```
+
