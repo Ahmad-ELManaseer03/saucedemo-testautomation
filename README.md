@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
 
 # 🧪 Saucedemo UI Test Automation Framework
@@ -117,7 +117,7 @@ Environment-related constants are stored in `com.ahmad.saucedemo.config.AppConfi
 public static final String BASE_URL          = "https://www.saucedemo.com/";
 public static final String STANDARD_USER     = "standard_user";
 public static final String STANDARD_PASSWORD = "secret_sauce";
-````
+
 
 This allows URLs and credentials to be updated centrally without modifying test logic.
 
