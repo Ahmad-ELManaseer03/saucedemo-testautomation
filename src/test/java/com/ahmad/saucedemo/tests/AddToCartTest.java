@@ -13,7 +13,6 @@ public class AddToCartTest extends BaseTest {
     public void addToCartShouldShowOneItemInCartBadge() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        // 👇 بدل ما نكتب اليوزر والباس هاردكود
         loginPage.login(AppConfig.STANDARD_USER, AppConfig.STANDARD_PASSWORD);
 
         InventoryPage inventoryPage = new InventoryPage(driver);

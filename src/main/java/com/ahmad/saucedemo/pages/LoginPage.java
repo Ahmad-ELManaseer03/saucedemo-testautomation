@@ -9,12 +9,10 @@ public class LoginPage {
 
     private WebDriver driver;
 
-    // عناصر الصفحة
     private By usernameInput = By.id("user-name");
     private By passwordInput = By.id("password");
     private By loginButton   = By.id("login-button");
 
-    // عنصر رسالة الخطأ
     private By errorMessage = By.cssSelector("h3[data-test='error']");
 
     public LoginPage(WebDriver driver) {
@@ -33,7 +31,6 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 
-    // ترجع نص رسالة الخطأ، أو String فاضي لو ما في رسالة
     public String getErrorMessageText() {
         try {
             return driver.findElement(errorMessage).getText();
