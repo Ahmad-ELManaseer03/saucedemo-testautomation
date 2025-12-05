@@ -152,7 +152,7 @@ Each automated test maps directly to a documented manual test case (see [Manual 
 
 ## 🗂 Project Structure
 
-```text
+
 saucedemo-automation/
  ├─ pom.xml                  # Maven configuration (dependencies, plugins)
  ├─ testng.xml               # TestNG suite configuration
@@ -175,7 +175,7 @@ saucedemo-automation/
  │             ├─ AddToCartTest.java        # TC-001
  │             ├─ CartItemNameTest.java     # TC-002
  │             └─ InvalidLoginTest.java     # TC-003
-```
+
 
 ---
 
@@ -278,7 +278,3 @@ This project is part of a professional QA automation portfolio and demonstrates 
 
 ```
 
-هذا كله تحطه زي ما هو في `README.md`.  
-لو بعد ما تشوفه على GitHub حاب نضيف **Banner Image** فوق (صورة 1200x300 مثلاً بعنوان المشروع)، أقدر أكتب لك نص تكتبه في Canva أو أي أداة تصميم وتطلّع صورة تناسب الريبوزيتوري.
-::contentReference[oaicite:0]{index=0}
-```
