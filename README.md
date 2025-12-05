@@ -15,7 +15,7 @@ Built with:
 
 </div>
 
----
+
 
 ## 📚 Table of Contents
 
@@ -33,7 +33,7 @@ Built with:
 9. [Manual Test Cases Mapping](#-manual-test-cases-mapping)  
 10. [Author](#-author)  
 
----
+
 
 ## 🎯 Objectives
 
@@ -47,7 +47,7 @@ Built with:
   - Centralized configuration and test data.
   - Suite-based execution using **TestNG**.
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -59,7 +59,7 @@ Built with:
 - **Design Pattern:** Page Object Model (POM)  
 - **Default Browser:** Microsoft Edge (configurable to Chrome / Firefox)  
 
----
+
 
 ## 🧱 Architecture & Design
 
@@ -91,7 +91,7 @@ Tests never interact with raw locators directly. They use high-level methods fro
 - **Reusability**  
 - **Maintainability**
 
----
+
 
 ### 3.2 `BaseTest`
 
@@ -107,7 +107,7 @@ All test classes **extend `BaseTest`**, which:
 - Eliminates duplicated setup/teardown logic.  
 - Provides a consistent WebDriver lifecycle across all tests.  
 
----
+
 
 ### 3.3 Configuration Management
 
@@ -121,7 +121,7 @@ public static final String STANDARD_PASSWORD = "secret_sauce";
 
 This allows URLs and credentials to be updated centrally without modifying test logic.
 
----
+
 
 ## ✅ Test Coverage
 
@@ -148,7 +148,7 @@ Current automated scenarios:
 
 Each automated test maps directly to a documented manual test case (see [Manual Test Cases Mapping](#-manual-test-cases-mapping)).
 
----
+
 
 ## 🗂 Project Structure
 
@@ -175,9 +175,9 @@ saucedemo-automation/
  │             ├─ AddToCartTest.java        # TC-001
  │             ├─ CartItemNameTest.java     # TC-002
  │             └─ InvalidLoginTest.java     # TC-003
-```
 
----
+
+
 
 ## 📦 Prerequisites
 
@@ -188,7 +188,7 @@ saucedemo-automation/
 
 All third-party dependencies are managed via **Maven** in `pom.xml`.
 
----
+
 
 ## ▶️ Setup & Execution
 
@@ -201,7 +201,7 @@ All third-party dependencies are managed via **Maven** in `pom.xml`.
    * **IntelliJ IDEA:** `Open → Select pom.xml`
 3. Wait for Maven to resolve all dependencies.
 
----
+
 
 ### 7.2 Running Tests from the IDE
 
@@ -213,7 +213,7 @@ All third-party dependencies are managed via **Maven** in `pom.xml`.
 
   * Right-click `testng.xml` → `Run As → TestNG Suite`.
 
----
+
 
 ### 7.3 Running Tests from Maven
 
@@ -223,7 +223,7 @@ From the project root:
 mvn test
 ```
 
----
+
 
 ## 🔄 Extending the Framework
 
@@ -248,19 +248,19 @@ public class CheckoutTest extends BaseTest {
 }
 ```
 
----
+
 
 ## 🧾 Manual Test Cases Mapping
 
 The framework currently automates the following manual test cases:
 
 | Test Case ID | Description                                           | Automated Class    |
-| ------------ | ----------------------------------------------------- | ------------------ |
+|  | -- |  |
 | **TC-001**   | Add first product to cart – cart badge shows `1`      | `AddToCartTest`    |
 | **TC-002**   | Product name in cart matches the selected product     | `CartItemNameTest` |
 | **TC-003**   | Invalid login displays an error message on login page | `InvalidLoginTest` |
 
----
+
 
 ## 👤 Author
 
